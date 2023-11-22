@@ -1,11 +1,7 @@
 version: '3.1'
 services:
-  springboot:
-    image: dockerhandson/maven-web-application:VERSION
+  photofolio:
+    image: 477584176712.dkr.ecr.ap-south-1.amazonaws.com/photofolio:VERSION
     restart: always
     ports:
-    - 9090:8080
-    networks:
-    - mavenappbridge
-networks:
-  mavenappbridge:
+    - 8080:8080
